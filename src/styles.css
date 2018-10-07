@@ -11,7 +11,10 @@ h2 {
     font-family: "DIN",Helvetica,Arial,sans-serif;
 }
 
-.item1 { grid-area: header; }
+.item1 {
+    grid-area: header;
+    background-image: src="https://www.freewebheaders.com/wordpress/wp-content/gallery/global/global-business-header-718-1024x300.jpg";    
+}
 .item2 { grid-area: menu; }
 .item3 { grid-area: main; }
 .item4 { grid-area: main; }
@@ -41,18 +44,26 @@ h2 {
         flex-direction: column;
     }
 
+    .item1 {
+        order: 1;
+    }
+
     .item2 {
-        order: 2;
+        order: 3;
         text-align: center
     }
     
     .item3 {
-        order: 1;
+        order: 2;
         text-align: center
     }
 
     .item4 {
-        order: 3;
+        order: 4;
         text-align: center
     }
-  }
+    
+    .item5 {
+        order: 5;
+    }
+}
